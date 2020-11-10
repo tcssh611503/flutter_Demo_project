@@ -19,28 +19,22 @@ const MaterialColor customSwatch = const MaterialColor(
   },
 );
 
-
-
-
-
 class MyApp extends StatelessWidget {
 
-  var axs ='flutter_swiper Demo';
+  var titleString ='flutter_swiper Demo';
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //名稱
       title: 'Flutter Demo',
       theme: ThemeData(
-        // primarySwatch: Colors.blue,
         primarySwatch: customSwatch,
       ),
-      //app首頁名稱
-      home: MyHomePage(title: axs),
+      home: MyHomePage(title: titleString),
     );
   }
 }
+
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
