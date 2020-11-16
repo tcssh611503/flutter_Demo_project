@@ -23,7 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-    uses-material-design: true
+      # uses-material-design: true
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -31,6 +31,9 @@ dependencies:
   cupertino_icons: ^1.0.0
   flutter_swiper: ^1.1.6
   font_awesome_flutter: any
+  flare_splash_screen: ^2.1.3
+  dio: ^3.0.10
+  http: ^0.12.0+3
 
 
 dev_dependencies:
@@ -47,6 +50,8 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/
 
   # To add assets to your application, add an assets section, like this:
 #   assets:
