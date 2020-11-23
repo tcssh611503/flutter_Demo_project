@@ -28,6 +28,7 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
+  #  ^在每次 flutter pub get 是会有小版本的自动升级，不添加这个符号就不会有自动小升级
   cupertino_icons: ^1.0.0
   flutter_swiper: ^1.1.6
   font_awesome_flutter: any
