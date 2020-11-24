@@ -39,7 +39,12 @@ class _DioTestState extends State<DioTest> {
   _loadData() async {
     try {
       Response response = await Dio().get("https://jsonplaceholder.typicode.com/todos/10");
+
+      print("response");
       print(response);
+      print("data");
+      print(response.data['title'].toString());
+
     } catch (e) {
       print(e);
     }
@@ -62,7 +67,8 @@ class _DioTestState extends State<DioTest> {
             "content-type": "application/json",
             })
           );
-      print(response.data);
+      print("response");
+      print(response);
       print(params);
       
     } catch (e) {
@@ -70,6 +76,13 @@ class _DioTestState extends State<DioTest> {
     }
   }
 
+
+  //download file
+  // developerlibs() async {
+  // var dio = Dio();
+  // Response response = await dio.download("https://www.developerlibs.com/pdf", "./xx.html","./xx.jpeg","./xx.pdf");
+  // print(response.data);
+  // }
 
   @override
   Widget build(BuildContext context) {
